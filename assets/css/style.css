@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Open+Sans+Condensed:300&display=swap');
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0px 15%;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mascara_principal{
+    height: 15em;
+    border: 10%;
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2{
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
