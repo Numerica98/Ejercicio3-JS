@@ -2,7 +2,8 @@
 
 body{
     font-family: 'Open Sans Condensed', sans-serif;
-    margin: 0px 15%;
+    margin: 0px 10%;
+    background-image: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/204180/aceef6d078c24ad92392b0ad066af923f2f96012.jpg");
 }
 
 .header{
@@ -11,7 +12,7 @@ body{
     align-items: center;
 }
 
-.mascara_principal{
+.logo{
     height: 15em;
     border: 10%;
     border-radius: 50%;
@@ -19,18 +20,53 @@ body{
 
 a{
     text-decoration: none;
+    
 }
 
 h1, h2{
     font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 1.8em;
+}
+
+h1{
+    color: #FAF7F7;
+    font-size: 3em;
+}
+
+p{
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+main{
+    background-color: #FAF7F7;
+}
+
+.content-option{
+    margin-top: 1em;
+    padding: 1em 2.5em;
 }
 
 .menu{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #F4D03F;
+    font-size: 1.5em;
+    padding: 1em;
+    color: #5D2921;
 }
 
-.hidden{
+.menu :visited{
+    color: #5D2921;
+}
+
+.menu :hover{
+    background-color: #B2B09B;
+    opacity: 1.0;
+}
+
+.hide{
     display: none;
 }

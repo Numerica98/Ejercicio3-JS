@@ -1,17 +1,17 @@
-window.onload = function () {
-    init();
+window.onload= () =>{
+    show();
 }
 
-function init() {
-    var navigateOptions = document.querySelectorAll(".tab-control .item-control");
-    var currentDisplay = document.getElementById(navigateOptions[0].dataset.open);
-    currentDisplay.classList.remove("hidden");
+function show(){
+    var menuOptions= document.querySelectorAll(".menu .option-menu");
+    var currentOption= document.getElementById(menuOptions[0].dataset.open);
+    currentOption.classList.remove("hide");
 
-    navigateOptions.forEach(item => {
-        item.addEventListener("click", function () {
-            currentDisplay.classList.toggle("hidden");
-            currentDisplay = document.getElementById(this.dataset.open);
-            currentDisplay.classList.toggle("hidden");
+    menuOptions.forEach(option =>{
+        option.addEventListener("click",function(){
+            currentOption.classList.toggle("hide");
+            currentOption= document.getElementById(this.dataset.open);
+            currentOption.classList.toggle("hide");
         })
     });
 }
